@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 }
+html::-webkit-scrollbar{
+    background: transparent ;
+    width: 0;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -31,4 +35,8 @@ img {
   --big-fz:calc(25px + (65 - 25)* ((100vw - 300px) / (1500-300)));
   --medium-fz:calc(16px + (35 - 16)* ((100vw - 300px) / (1500-300)));
   --small-fz:calc(12px + (18 - 12)* ((100vw - 300px) / (1500-300)));
+}
+body{
+    background: var(--bg-color-1);
+    
 }
